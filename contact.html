@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site </title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a class="logo" href="home.html"><img src="imgs/logo2.png" alt="logo" width="50px" height="50px"> </a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+        <a class="cta" href="contact.html">Contact</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <li><a href="home.html">home</a></li>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <li><a href="About.html">About</a></li>
+          
+        </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <form action="https://formspree.io/f/xnqwdgbo" method="POST" id="my-form">
+    
+          <div class="form-group">
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName" name="firstName" style="background-color: #28282B; color: white;">
+          </div>
+    
+          <div class="form-group">
+            <label for="latsName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" style="background-color: #28282B; color: white;">
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" style="background-color: #28282B; color: white;">
+          </div>
+    
+          <div class="form-group">
+            <label for="massage">Massage</label>
+            <textarea name="massage" id="massage" cols="30" rows="10" style="background-color: #28282B; color: white;"></textarea>
+          </div>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="status"></div>
+    </section>
+
+<script src="./main.js"></script>
+  
+    <script type="text/javascript" src="mobile.js"></script>
+</body>
+</html>
